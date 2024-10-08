@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/your-repo-url.git', branch: 'main' // Change to your repo URL and branch
+                https://github.com/Raghavendraswamy/maven-example.git, branch: 'main' // Change to your repo URL and branch
             }
         }
         stage('Build') {
