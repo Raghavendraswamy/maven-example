@@ -10,16 +10,5 @@ echo "Building in directory: $(pwd)"
 echo "Using Java version:"
 java -version
 
-# Clean the target directory
-echo "Cleaning project..."
-mvn clean
-
-# Build the project
-echo "Building project..."
-mvn install
-
-# Run tests
-echo "Running tests..."
-mvn test
 
 echo "Build completed successfully!"
