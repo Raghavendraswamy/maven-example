@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+     parameters {
+        string(name: 'CUSTOM_MESSAGE', defaultValue: 'Hello, Jenkins!', description: 'Enter your custom message')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+               git url: 'https://github.com/Raghavendraswamy/maven-example.git' , branch: 'main'
+            }
+        }
+        stage('Build') {
+            steps {
+               echo 'welcome'
+               echo "Custom Message: ${params.CUSTOM_MESSAGE}"
+
+               
+            }
+        }
+        
+}}
